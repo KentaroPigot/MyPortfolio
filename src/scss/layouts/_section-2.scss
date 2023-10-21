@@ -1,0 +1,47 @@
+.section--2 {
+  color: #fff;
+  mix-blend-mode: difference;
+  min-height: 100vh;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__text {
+    width: 100%;
+    mix-blend-mode: difference;
+    padding: 58px;
+    &__title {
+      font-size: 200px;
+      line-height: 1.05;
+    }
+
+    &__more {
+      max-width: 60vw;
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__author {
+      padding-top: 35px;
+      display: inline-block;
+    }
+  }
+
+  &__rectangle {
+    z-index: -1;
+    background-color: #fff;
+    width: 72%;
+    height: 69%;
+    position: absolute;
+    top: 207px;
+    left: 156px;
+    transform: rotateZ(5deg);
+  }
+}

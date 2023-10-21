@@ -1,0 +1,107 @@
+.section--3 {
+  $title-size: 5.9vw;
+  $title-padding: 0.75vw;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+
+  &__title {
+    padding-inline: 3.9vw;
+    padding-bottom: 40px;
+    font-size: 10vw;
+    line-height: 1.3;
+  }
+  &__line {
+    // border: 1px solid black;
+    background-color: black;
+    position: relative;
+    height: calc($title-size + (2 * $title-padding));
+    &__title {
+      transition: all 0.5s ease-in-out;
+      font-size: $title-size;
+      position: absolute;
+      color: white;
+      padding-inline: 3.9vw;
+      line-height: 1;
+      mix-blend-mode: difference;
+      &.right {
+        right: 0;
+      }
+      &__container {
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      &.left-title {
+        left: 0;
+      }
+    }
+    &__infos {
+      color: #fff;
+      align-items: flex-start;
+      width: 54%;
+      height: 100%;
+      padding-inline: 3.9vw;
+      display: flex;
+      &.right {
+        position: absolute;
+        right: 0;
+        // width: 54%;
+      }
+      & > div {
+        flex-direction: column;
+        height: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+      & span {
+        font-size: 1.2vw;
+        transition: all 0.3s ease-in-out;
+        transition-delay: 0.1s;
+        transform: translateY(30%);
+        opacity: 0;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__spacer {
+    height: 2px;
+    margin-inline: auto;
+    background-color: black;
+    width: 93%;
+    text-align: center;
+  }
+
+  &__line:hover {
+    & .section--3__line__title__container {
+      // animation: disappear 1s forwards;
+      background-color: transparent;
+    }
+    & .section--3__line__title {
+      // animation: leftToRight 1s forwards;
+      transform: translateX(70vw);
+      &.right {
+        transform: translateX(-56vw);
+      }
+    }
+    & .section--3__line__infos span {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+// @keyframes disappear {
+//   0% {
+//     background-color: white;
+//   }
+//   100% {
+//     background-color: transparent;
+//   }
+// }
