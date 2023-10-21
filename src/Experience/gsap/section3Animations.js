@@ -317,7 +317,18 @@ export default class section3Animations {
       .to(this.text, { duration: 1, opacity: 0 }, "start")
       // .to(this.slide, { duration: 1, transform: "translateX(100%)" }, "start")
       .addLabel("backgroundSet-=0.2")
-      .to(this.section3, { duration: 1, autoAlpha: 1 }, "backgroundSet")
+      .to(
+        this.section3,
+        {
+          duration: 1.3,
+          autoAlpha: 1,
+        },
+        "backgroundSet"
+      )
+      .to(this.section3, {
+        duration: 0,
+        pointerEvents: "all",
+      })
       .to(
         this.section2,
         { duration: 0, opacity: 0, autoAlpha: 0 },

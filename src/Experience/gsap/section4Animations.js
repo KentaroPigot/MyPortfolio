@@ -164,8 +164,8 @@ export default class section4Animations {
         this.image1,
         {
           duration: 1,
-          x: "25%",
-          rotate: "45deg",
+          x: "13%",
+          rotate: "-16deg",
           ease: "power4.out",
         },
         "imageThrown"
@@ -174,8 +174,8 @@ export default class section4Animations {
         this.image2,
         {
           duration: 1,
-          x: "25%",
-          rotate: "-20deg",
+          x: "22%",
+          rotate: "-16deg",
           ease: "power4.out",
         },
         "imageThrown"
