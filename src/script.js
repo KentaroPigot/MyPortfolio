@@ -1,6 +1,6 @@
 import Landing1 from "./Experience/worlds/Landing1.js";
-import SectionProjects from "./Experience/worlds/SectionProjects.js";
-import CursorStyle from "./cursorStyle.js";
+// import SectionProjects from "./Experience/worlds/SectionProjects.js";
+// import CursorStyle from "./cursorStyle.js";
 import section2Animations from "../src/Experience/gsap/section2Animations.js";
 import section3Animations from "../src/Experience/gsap/section3Animations.js";
 import section4Animations from "../src/Experience/gsap/section4Animations.js";
