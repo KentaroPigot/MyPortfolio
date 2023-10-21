@@ -9,19 +9,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=M+PLUS+1p:wght@100&family=Raleway:wght@400;500;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Lato&family=M+PLUS+1p:wght@100&family=Raleway:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
 
     <!-- <link rel="stylesheet" href="./style.css" /> -->
     
-    <script type="module" crossorigin src="./assets/index-90c9350b.js"></script>
-    <link rel="stylesheet" href="./assets/index-634490d9.css">
+    <script type="module" crossorigin src="./assets/index-2f7455c7.js"></script>
+    <link rel="stylesheet" href="./assets/index-90beea68.css">
   </head>
   <body>
     <!-- <div class="cursor"></div> -->
     <canvas class="webgl"></canvas>
     <div class="noise"></div>
+
     <div class="bg-line-set">
       <div class="bg-line line_1-1"></div>
       <div class="bg-line line_2-1"></div>
@@ -35,6 +36,25 @@
       <div class="bg-line line_4-2"></div>
       <div class="bg-line line_5-2"></div>
     </div>
+
+    <div class="bg-zone-container">
+      <div class="bg-zone-set">
+        <div class="bg-zone zone_1-2"></div>
+        <div class="bg-zone zone_2-2"></div>
+        <div class="bg-zone zone_3-2"></div>
+        <div class="bg-zone zone_4-2"></div>
+        <div class="bg-zone zone_5-2"></div>
+        <div class="bg-zone zone_6-2"></div>
+
+        <div class="bg-zone zone_1-1"></div>
+        <div class="bg-zone zone_2-1"></div>
+        <div class="bg-zone zone_3-1"></div>
+        <div class="bg-zone zone_4-1"></div>
+        <div class="bg-zone zone_5-1"></div>
+        <div class="bg-zone zone_6-1"></div>
+      </div>
+    </div>
+
     <main class="section--1">
       <div class="title">
         <h1>
@@ -67,17 +87,6 @@
         <span>Contact</span><span>About</span>
       </div> -->
     </main>
-
-    <div class="bg-zone-container">
-      <div class="bg-zone-set">
-        <div class="bg-zone zone_1"></div>
-        <div class="bg-zone zone_2"></div>
-        <div class="bg-zone zone_3"></div>
-        <div class="bg-zone zone_4"></div>
-        <div class="bg-zone zone_5"></div>
-        <div class="bg-zone zone_6"></div>
-      </div>
-    </div>
 
     <section class="section--2">
       <p class="section--2_text">
@@ -181,85 +190,282 @@
     </section>
 
     <section class="section--4">
-      <h2>
-        <span
-          >My goal is to give the best possible experience by providing a piece
-          of art that fit the requisites that I received. </span
-        ><span
-          >私の目標は、頂いた要件に適合する芸術作品を提供し、最高の体験を提供することです。</span
-        >
-      </h2>
-    </section>
-    <section class="section--5">
-      <div class="section--5_container">
-        <div class="section--5_title">
-          <h2>PR<span class="green-letter">O</span>JECT 1</h2>
-          <h2>プロジェクト</h2>
-        </div>
-        <div class="section--5_description">
-          <div>
-            <h3>SOPHIE BLUEL'S P<span class="green-letter">O</span>RTFOLIO</h3>
-            <span>An architect’s portfolio with an admin access.</span>
-            <span>Constraints : <br />Vanilla js only / Admin access.</span>
+      <div class="section--4_hidder">
+        <img class="section--4_image-1" src="./img/IMG_2135-610.png" />
+        <img class="section--4_image-2" src="./img/IMG_2135-69.png" />
+
+        <div class="section--4_hidder_shadow"></div>
+      </div>
+
+      <div class="section--4_content firstLayer">
+        <h2 class="section--4_title">
+          <div>ART AS A</div>
+          <div>TOOL</div>
+        </h2>
+        <div class="section--4_content-right">
+          <div class="section--4_content-right-left">
+            <p>
+              My goal is to give the best possible experience by providing a
+              piece of art that fit the requisites that I received. <br />
+              <br />
+              私の目標は、頂いた要件に適合する芸術作品を提供し、最高の体験を提供することです。
+            </p>
             <span
-              >Skill developed : <br />
-              Code structure with MVC architecture.</span
-            >
-            <a href="https://github.com/KentaroPigot/Projet3" target="_blank"
-              >To the site</a
+              >Portfolio 2023 <br />
+              ポツフォぃオー２０２３</span
             >
           </div>
-        </div>
-        <div class="section--5_image">
-          <img src="img/SophiaBluel.png" alt="Site de Sophie Bluel" />
+          <span class="section--4_content-right-right">Awwwards 2023 sotd</span>
         </div>
       </div>
-      <div class="section--5_container">
-        <div class="section--5_title">
-          <h2>PR<span class="green-letter">O</span>JECT 2</h2>
-          <h2>プロジェクト</h2>
-        </div>
-        <div class="section--5_description">
-          <div>
-            <h3>BNB L<span class="green-letter">O</span>CATION</h3>
-            <span>A BNB location's app made with REACT.</span>
-            <span>Constraints : Route handling</span>
-            <span
-              >Skill developed : <br />
-              First time using REACT.</span
-            >
-            <a href="https://github.com/KentaroPigot/Projet6" target="_blank"
-              >To the site</a
-            >
+
+      <div class="section--4_content secondLayer">
+        <div class="section--4--2--left">
+          <div class="section--4--2--left_titles">
+            <h3>Traits</h3>
+            <h3>Technologies</h3>
+            <h3>Skills</h3>
+          </div>
+
+          <div class="section--4--2--left_content">
+            <div class="section--4--2--left_content_block" data-blockid="1">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Motivated</span>
+                <span class="block_text">Jest</span>
+                <span class="block_text">English (TOEIC)</span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/1.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="2">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Insightful</span>
+                <span class="block_text">PostgreSQL</span>
+                <span class="block_text">English (TOEIC)</span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/2.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="3">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Quickthinker</span>
+                <span class="block_text">SEO</span>
+                <span class="block_text"></span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/3.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="4">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Creative</span>
+                <span class="block_text">GraphQL</span>
+                <span class="block_text"></span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/4.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="5">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Curious</span>
+                <span class="block_text">OAuth 2.0</span>
+                <span class="block_text">Blender</span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/5.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="6">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Hard worker</span>
+                <span class="block_text">Next.js</span>
+                <span class="block_text"></span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/5.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
+
+            <div class="section--4--2--left_content_block" data-blockid="7">
+              <div class="section--4--2--left_content_block_text_wrapper">
+                <span class="block_text">Motivated</span>
+                <span class="block_text">Docker</span>
+                <span class="block_text"></span>
+              </div>
+              <!-- <div class="block_background_container">
+                <img class="block_background" src="/img/section4/1.jpg" />
+              </div> -->
+            </div>
+            <div class="section--4--2--left_content_line"></div>
           </div>
         </div>
-        <div class="section--5_image">
-          <img src="img/Kasa.jpg" alt="Site de Sophie Bluel" />
+        <div class="section--4--2--right">
+          <p class="section--4_more--2">
+            My goal is to give the best possible experience by providing a piece
+            of art that fit the requisites that I received. <br />
+            <br />
+            私の目標は、頂いた要件に適合する芸術作品を提供し、最高の体験を提供することです。
+          </p>
+          <span>Awwwards 2023 sotd</span>
+        </div>
+
+        <div class="section--4_cursor">
+          <img class="cursorImage" src="./img/section4/1.jpg" data-id="1" />
+          <img class="cursorImage" src="./img/section4/2.jpg" data-id="2" />
+          <img class="cursorImage" src="./img/section4/3.jpg" data-id="3" />
+          <img class="cursorImage" src="./img/section4/4.jpg" data-id="4" />
+          <img class="cursorImage" src="./img/section4/5.jpg" data-id="5" />
         </div>
       </div>
+
+      <!-- <div class="section--4_content thirdLayer">
+        <div class="thirdLayer_content-left">
+          <div class="thirdLayer_carrousel">
+            <div class="project_container" data-projectId="1">
+              <div class="project_titles">
+                <h2 class="project_titles_title">NATOURS</h2>
+                <h3 class="project_titles_subtitle">ナトゥール</h3>
+                <div class="project_description">
+                  <p>
+                    Projet personnel Dosa. <br />
+                    <br />
+
+                    Création d’un site pour une architecte basée à Berlin.
+                    Utilisation de 3js et de serveur oneway sous l’hébergeur
+                    Aritho pour une meilleur connexion au serveur et un débit
+                    sans fil optimisé.
+                    <br />
+                    <br />
+
+                    ベルリンを拠点とする建築家のウェブサイトの作成。 Aritho
+                    ホストでの 3js
+                    と一方向サーバーの使用により、サーバーへの接続が向上し、ワイヤレス速度が最適化されます
+                  </p>
+                </div>
+              </div>
+              <div class="project_image-container">
+                <img src="/img/section4/4.jpg" />
+              </div>
+            </div>
+            <div
+              class="project_container active enableHover"
+              data-projectId="2"
+            >
+              <div class="project_titles">
+                <h2 class="project_titles_title">NETFLIX</h2>
+                <h3 class="project_titles_subtitle">プロジェクト</h3>
+              </div>
+              <div class="project_description">
+                <p>
+                  Projet personnel Dosa. <br />
+                  <br />
+
+                  Création d’un site pour une architecte basée à Berlin.
+                  Utilisation de 3js et de serveur oneway sous l’hébergeur
+                  Aritho pour une meilleur connexion au serveur et un débit sans
+                  fil optimisé.
+                  <br />
+                  <br />
+
+                  ベルリンを拠点とする建築家のウェブサイトの作成。 Aritho
+                  ホストでの 3js
+                  と一方向サーバーの使用により、サーバーへの接続が向上し、ワイヤレス速度が最適化されます
+                </p>
+              </div>
+              <div class="project_image-container">
+                <img src="/img/section4/4.jpg" />
+              </div>
+            </div>
+            <div class="project_container" data-projectId="3">
+              <div class="project_titles">
+                <h2 class="project_titles_title">SEO</h2>
+                <h3 class="project_titles_subtitle">最適化</h3>
+              </div>
+              <div class="project_description">
+                <p>
+                  Projet personnel Dosa. <br />
+                  <br />
+
+                  Création d’un site pour une architecte basée à Berlin.
+                  Utilisation de 3js et de serveur oneway sous l’hébergeur
+                  Aritho pour une meilleur connexion au serveur et un débit sans
+                  fil optimisé.
+                  <br />
+                  <br />
+
+                  ベルリンを拠点とする建築家のウェブサイトの作成。 Aritho
+                  ホストでの 3js
+                  と一方向サーバーの使用により、サーバーへの接続が向上し、ワイヤレス速度が最適化されます
+                </p>
+              </div>
+              <div class="project_image-container">
+                <img src="/img/section4/4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thirdLayer_content-right">
+          <div class="thirdLayer_buttons">
+            <div
+              class="thirdLayer_buttons_button--up button"
+              data-direction="up"
+            ></div>
+            <div
+              class="thirdLayer_buttons_button--down button"
+              data-direction="down"
+            ></div>
+          </div>
+        </div>
+      </div> -->
     </section>
-    <footer class="section--6">
-      <div class="section--6_zone_1 zone">
-        <span
-          >Instagram <br />Linkedin <br />
-          Twitter</span
+    <div class="section--5_background"></div>
+    <footer class="section--5">
+      <div class="section--5_container">
+        <div class="section--5_container_zone section--5_container_zone--1">
+          <span> Portfolio 2023 </span>
+        </div>
+        <div
+          class="section--5_container_zone section--5_container_zone--2"
+        ></div>
+        <div class="section--5_container_zone section--5_container_zone--3">
+          <a href="">Instagram</a>
+          <a href="">Linkedin</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Email</a>
+        </div>
+        <div class="section--5_container_zone section--5_container_zone--4">
+          <a class="underline">My projects</a>
+        </div>
+        <div
+          class="section--5_container_zone section--5_container_zone--5"
+        ></div>
+        <div
+          class="section--5_container_zone section--5_container_zone--6"
+        ></div>
+      </div>
+      <div class="section--5_slider">
+        <span class="section--5_slider_infinite"
+          >CONTACT 接触 CONTACT 接触</span
+        >
+        <span class="section--5_slider_infinite"
+          >CONTACT 接触 CONTACT 接触</span
         >
       </div>
-      <div class="section--6_zone_2 zone">
-        <span
-          >Adresse mail: <br />
-          kentaroleandre@gmail.com</span
-        >
-      </div>
-      <div class="section--6_zone_3 zone">
-        <span
-          >Numéro de téléphone: <br />
-          + 33 7 98 99 98 92</span
-        >
-      </div>
-      <div class="section--6_zone_4 zone"></div>
-      <div class="section--6_zone_5 zone"></div>
-      <div class="section--6_zone_6 zone"></div>
     </footer>
 
     
