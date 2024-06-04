@@ -1,10 +1,12 @@
 import { gsap } from "gsap";
 
-export default class Section4_3Animations {
-  constructor() {
+export default class Section6Animations {
+  constructor(elementManager) {
+    this.elements = elementManager;
     this.sliderNumber = 0;
     this.getElements();
 
+    console.log(this.elements.section6);
     this.clickButton();
     this.hoverHandler();
     this.isClickable = true;
@@ -13,25 +15,26 @@ export default class Section4_3Animations {
 
   getElements() {
     this.section4_3 = document.querySelector(".section--4_content.thirdLayer");
-    this.carrousel = document.querySelector(".thirdLayer_carrousel");
-    this.mark = document.querySelector(".thirdLayer_mark");
-    this.projects = Array.from(document.querySelectorAll(".project_container"));
-    this.buttons = document.querySelector(".thirdLayer_buttons");
+    console.log(this.section4_3);
+    // this.carrousel = document.querySelector(".thirdLayer_carrousel");
+    // this.mark = document.querySelector(".thirdLayer_mark");
+    // this.projects = Array.from(document.querySelectorAll(".project_container"));
+    // this.buttons = document.querySelector(".thirdLayer_buttons");
 
-    this.projectsWithElements = this.projects.map((project) => ({
-      title: project.querySelector(".project_titles_title"),
-      subtitle: project.querySelector(".project_titles_subtitle"),
-      description: project.querySelector(".project_description"),
-      imageContainer: project.querySelector(".project_image-container"),
-      image: project.querySelector(".project_image-container>img"),
-    }));
+    // this.projectsWithElements = this.projects.map((project) => ({
+    //   title: project.querySelector(".project_titles_title"),
+    //   subtitle: project.querySelector(".project_titles_subtitle"),
+    //   description: project.querySelector(".project_description"),
+    //   imageContainer: project.querySelector(".project_image-container"),
+    //   image: project.querySelector(".project_image-container>img"),
+    // }));
   }
 
   // Add your transition and other methods here
 
   clickButton() {
     this.sliderTl = gsap.timeline();
-    this.section4_3.addEventListener("click", (e) => {
+    this.elements.section6.addEventListener("click", (e) => {
       if (!e.target.classList.contains("button") || this.isAnimating) return;
 
       this.isAnimating = true;
@@ -43,14 +46,14 @@ export default class Section4_3Animations {
       //   this.sliderNumber = this.projects.length - 2;
 
       const offset = this.sliderNumber * 280;
-      this.currentProject = this.projects[this.sliderNumber + 1];
+      this.currentProject = this.section6_projects[this.sliderNumber + 1];
 
       // console.log(this.sliderNumber + 1);
 
       this.currentProjectElements =
         this.projectsWithElements[this.sliderNumber + 1];
 
-      this.projects.forEach((prj) => {
+      this.section6_projects.forEach((prj) => {
         prj.classList.remove("active");
         prj.classList.remove("enableHover");
       });
@@ -121,7 +124,8 @@ export default class Section4_3Animations {
       const target = e.target.closest(".project_container");
       if (!target) return;
       const targetProject = Number(target.dataset.projectid) - 1;
-      const project = this.projectsWithElements[targetProject];
+      const project =
+        this.elements.section6_projectsWithElements[targetProject];
 
       if (this.isClickable) {
         this.isClickable = false;
@@ -157,7 +161,7 @@ export default class Section4_3Animations {
       opacity: 1,
     });
 
-    tl.to(this.buttons, {
+    tl.to(this.section6_buttons, {
       duration: 0.5,
       autoAlpha: 0,
       pointerEvents: "none",
@@ -202,7 +206,7 @@ export default class Section4_3Animations {
       "shrink"
     );
 
-    tl.to(this.buttons, {
+    tl.to(this.section6_buttons, {
       duration: 1,
       autoAlpha: 1,
       pointerEvents: "all",

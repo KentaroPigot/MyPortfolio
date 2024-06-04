@@ -58,6 +58,17 @@ body {
   overscroll-behavior-y: contain;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  pointer-events: none;
+}
+
 html {
   scrollbar-width: none;
 
@@ -612,6 +623,9 @@ main {
       border-left: 1px solid var(--main-2);
       // border-right: 1px solid var(--main-2);
       font-size: 3vw;
+      & div {
+        pointer-events: none;
+      }
 
       & span {
         display: block;
@@ -630,6 +644,9 @@ main {
       border-top: 1px solid var(--main-2);
       border-left: 1px solid var(--main-2);
       // border-right: 1px solid var(--main-2);
+      & div {
+        pointer-events: none;
+      }
 
       & span {
         display: block;
@@ -648,6 +665,9 @@ main {
       border-top: 1px solid var(--main-2);
       border-left: 1px solid var(--main-2);
       border-right: 1px solid var(--main-2);
+      & div {
+        pointer-events: none;
+      }
 
       & span {
         display: block;
@@ -1004,7 +1024,10 @@ main {
       font-size: 15px;
 
       &_titles {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        align-items: center;
+        min-width: 100%;
         padding-left: 10vw;
         padding-top: 62px;
         padding-bottom: 5vw;
@@ -1044,17 +1067,21 @@ main {
           width: 100%;
 
           &_text_wrapper {
-            display: flex;
+            // display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
             align-items: center;
             min-width: 100%;
-            overflow: hidden;
+            // overflow: hidden;
 
             & .block_text {
               color: black;
               position: relative;
+              overflow-wrap: break-word;
+
               z-index: 1;
               display: inline-block;
-              width: 40%;
+              width: 100%;
               opacity: 0;
               transform: translateY(100%);
             }
@@ -1206,9 +1233,9 @@ main {
           }
         }
       }
-      & .block_text {
-        width: 30%;
-      }
+      // & .block_text {
+      //   width: 30%;
+      // }
     }
   }
 }
@@ -1301,7 +1328,7 @@ main {
       }
       &--4 {
         margin-left: -40%;
-        height: 45%;
+        height: 38%;
         & a {
           pointer-events: all;
           display: inline-block;
@@ -1362,7 +1389,7 @@ main {
 
     &_container_zone--4 {
       margin-left: -49%;
-      height: 44%;
+      height: 38%;
       & a {
         font-size: 20px;
         border-radius: 25px;
