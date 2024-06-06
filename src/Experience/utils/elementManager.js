@@ -121,6 +121,9 @@ export default class ElementManager {
         `[class*="section--5_container_zone--${i}"]`
       );
     }
+    this.section7_links = document.querySelector(
+      ".section--5_container_zone--4 > a"
+    );
 
     this.area1 = {
       title: this.frontend,

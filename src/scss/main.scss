@@ -614,6 +614,7 @@ main {
   &_title {
     width: 100%;
     height: 100%;
+    font-size: clamp(13px, 3vw, 20px);
 
     &--1 {
       grid-column: 3/6;
@@ -622,7 +623,7 @@ main {
       border-top: 1px solid var(--main-2);
       border-left: 1px solid var(--main-2);
       // border-right: 1px solid var(--main-2);
-      font-size: 3vw;
+      // font-size: 3vw;
       & div {
         pointer-events: none;
       }
@@ -835,35 +836,43 @@ main {
   .section--3 {
     pointer-events: none;
     &_container {
-      grid-template-columns: 28.5% 1.5% 15% 3.6% 1.5% 14.8% 3.6% 1.5% 16.5% 3.6% 9.9%;
-      grid-template-rows: 5.25% 32.75% 12.85% 43.65% 2.4% 6.1%;
+      // grid-template-columns: 28.5% 1.5% 15% 3.6% 1.5% 14.8% 3.6% 1.5% 16.5% 3.6% 9.9%;
+      grid-template-columns: 13.5% 1.5% 21% 3.6% 1.5% 21% 3.6% 1.5% 21.5% 3.6% 9.9%;
+      // grid-template-rows: 5.25% 32.75% 12.85% 43.65% 2.4% 6.1%;
+      grid-template-rows: 5.25% 22.75% 22.85% 42.65% 2.4% 6.1%;
     }
     &_title {
       &--1 {
         & h3 {
-          font-size: 5vw;
+          // font-size: 5vw;
+          font-size: clamp(13px, 5vw, 35px);
         }
         & span {
           visibility: visible;
-          font-size: 3vw;
+          // font-size: 3vw;
+          font-size: clamp(10px, 3vw, 20px);
         }
       }
       &--2 {
         & h3 {
-          font-size: 5vw;
+          // font-size: 5vw;
+          font-size: clamp(13px, 5vw, 35px);
         }
         & span {
           visibility: visible;
-          font-size: 3vw;
+          // font-size: 3vw;
+          font-size: clamp(10px, 3vw, 20px);
         }
       }
       &--3 {
         & h3 {
-          font-size: 5vw;
+          // font-size: 5vw;
+          font-size: clamp(13px, 5vw, 35px);
         }
         & span {
           visibility: visible;
-          font-size: 3vw;
+          // font-size: 3vw;
+          font-size: clamp(10px, 3vw, 20px);
         }
       }
     }
@@ -882,6 +891,9 @@ main {
       font-size: 1.5vw;
     }
   }
+  [class^="section--3_more-"] {
+    font-size: clamp(11px, 2vw, 19px);
+  }
 }
 
 [class^="section--3_more-"] {
@@ -893,7 +905,7 @@ main {
   justify-content: center;
 
   color: white;
-  font-size: 1vw;
+  font-size: clamp(11px, 1.4vw, 17px);
   display: flex;
   background-color: black;
   justify-content: center;
@@ -902,7 +914,6 @@ main {
 
 .section--4 {
   pointer-events: none;
-  // pointer-events: all;
   opacity: 0;
   position: fixed;
   height: 100dvh;
@@ -955,7 +966,6 @@ main {
 
     & div {
       height: 7.5vw;
-      // background-color: blue;
       overflow: hidden;
       margin-bottom: 2vw;
     }
@@ -1330,7 +1340,7 @@ main {
         margin-left: -40%;
         height: 38%;
         & a {
-          pointer-events: all;
+          pointer-events: none;
           display: inline-block;
           font-size: 32px;
           border: 3px solid white;

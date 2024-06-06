@@ -122,7 +122,7 @@ const handleTouchMove = (e) => {
     } else if (currenSection === 1) {
       isAnimating = true;
       currenSection = 2;
-      section3Animation.play().eventCallback("onComplete", () => {
+      section3Animation.tlTransition.play().eventCallback("onComplete", () => {
         isAnimating = false;
       });
     } else if (currenSection === 2) {

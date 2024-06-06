@@ -8,10 +8,8 @@ export default class Section7Animations {
 
   groupColorCols() {
     // Cols black
-    // this.backgroundZones = document.querySelector(".bg-zone-container");
     this.blackCols = [];
     for (let i = 1; i < 7; i++) {
-      // this.blackCols.push(document.querySelectorAll(`[class*="zone_${i}-1"]`));
       this.blackCols.push(this.elements[`col${i}`]);
     }
     console.log(this.blackCols);
@@ -19,26 +17,8 @@ export default class Section7Animations {
     // Cols green
     this.greenCols = [];
     for (let i = 1; i < 7; i++) {
-      // this.greenCols.push(document.querySelectorAll(`[class*="zone_${i}-2"]`));
       this.greenCols.push(this.elements[`col${i}_2`]);
     }
-    console.log(this.greenCols);
-
-    // console.log(this.greenCols);
-
-    // Sec5 cols
-    // for (let i = 1; i < 7; i++) {
-    //   this[`line${i}_2`] = document.querySelectorAll(
-    //     `[class*="section--5_container_zone--${i}"]`
-    //   );
-    // }
-
-    // console.log(this.greenCols);
-
-    // this.background = document.querySelector(".section--5_background");
-    // this.section5 = document.querySelector(".section--5");
-    // this.section4 = document.querySelector(".section--4");
-    // this.section3 = document.querySelector(".section--3");
   }
 
   transition() {
@@ -94,7 +74,12 @@ export default class Section7Animations {
         "appears"
       )
       .to(this.greenCols[1], { duration: 1, top: "24%" }, "appears")
-      .to(this.blackCols[1], { duration: 1, height: "39%" }, "appears");
+      .to(this.blackCols[1], { duration: 1, height: "39%" }, "appears")
+      .to(
+        this.elements.section7_links,
+        { duration: 0, pointerEvents: "all" },
+        "appears"
+      );
 
     return this.tlTransition;
   }
